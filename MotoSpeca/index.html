@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoSpeca</title>
+    <link rel="icon" type="image/x-icon" href="assets/final vector favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+        <a class="logo">
+      <img src="assets/final vector favicon.png" alt="Logo"> MOTOSPECA
+    </a>
+    </div>
+        <!-- <div class="logo" >MotoSpec</div> -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="affilates.html">Our Affiliates</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      FIND THE BEST BIKE<br>FOR YOU
+      <br>
+      <a href="viewBikes.html" class="btn">NEW ARRIVALS</a>
+    </div>
+     <!-- Slide Buttons -->
+  <!-- <button class="slide-btn left" onclick="prevImage()">&#10094;</button>
+  <button class="slide-btn right" onclick="nextImage()">&#10095;</button> -->
+
+    
+  </section>
+  <!-- Popular Brands Section -->
+ <section class="brands" id="brands">
+  <div class="section-title">POPULAR BRANDS</div>
+  <div class="brand-grid">
+
+    <div class="brand-card">
+      <img src="./assets/Brands/yamaha.png" alt="Yamaha">
+    </div>
+
+    <div class="brand-card">
+      <img src="./assets/Brands/honda.png" alt="Honda">
+    </div>
+
+    <div class="brand-card">
+      <img src="./assets/Brands/tvs.png" alt="TVS">
+    </div>
+
+    <div class="brand-card">
+      <img src="./assets/Brands/royal.png" alt="Royal Enfield">
+    </div>
+
+    <div class="brand-card">
+      <img src="./assets/Brands/bajaj.png" alt="Bajaj">
+    </div>
+    <div class="brand-card">
+      <img src="./assets/Brands/ktm.png" alt="KTM">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Popular Models Section -->
+  <div class="section-title">POPULAR MODELS</div>
+   <!-- /* Product Detail Modal*/ -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+    <p id="modalDetails" class="bike-details"></p> 
+    <!-- Details will be inserted from the array in js when function calls "modalDetails" -->
+     <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<section class="product-grid">
+  <div class="product-card" onclick="showModal(0)">
+    <img src="assets/ns200.png" alt="Bike 1">
+    <p>Bajaj Pulsar NS200</p>
+  </div>
+
+  <div class="product-card" onclick="showModal(1)">
+    <img src="assets/R15M-0-300x214.png" alt="Bike 2">
+    <p>Yamaha R15 V4</p>
+  </div>
+
+  <div class="product-card" onclick="showModal(2)">
+    <img src="assets/APACHE 160.png" alt="Bike 3">
+    <p>TVS Apache RTR 160</p>
+  </div>
+   <div class="product-card" onclick="showModal(3)">
+    <img src="assets/DUKE 200.webp" alt="Bike 4">
+            <p>KTM Duke 200</p>
+  </div>
+   <div class="product-card" onclick="showModal(4)">
+    <img src="assets/Yamaha-mt-15-nepal-rbg.png" alt="Bike 5">
+            <p>Yamaha-mt-15</p>
+  </div>
+
+  <!-- Add more cards... -->
+</section>
+
+
+<!-- Honda Models Section-->
+  <div class="section-title">Explore More</div>
+  <div class="section-title">Bikes from Honda</div>
+   <!-- /* Product Detail Modal*/ -->
+    <div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+    <p id="modalDetails" class="bike-details"></p>
+     <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<section class="honda">
+  <div class="product-card" onclick="showModal(5)">
+    <img src="./assets/Honda/bike1.png" alt="Bike 1">
+    <p>HONDA X BLADE</p>
+  </div>
+  <div class="product-card" onclick="showModal(6)">
+    <img src="./assets/Honda/bike2.png" alt="Bike 2">
+    <p>HONDA NX 200</p>
+  </div>
+  <div class="product-card" onclick="showModal(7)">
+    <img src="./assets/Honda/bike3.png" alt="Bike 3">
+    <p>HONDA CB 350</p>
+  </div>
+  <div class="product-card" onclick="showModal(8)">
+    <img src="./assets/Honda/bike4.png" alt="Bike 4">
+    <p>HONDA CBR 600</p>
+  </div>
+  <div class="product-card" onclick="showModal(9)">
+    <img src="./assets/Honda/bike5.png" alt="Bike 5">
+    <p>HONDA GOLD WING</p>
+  </div>
+  </section>
+
+  <!-- Yamaha Models Section -->
+  <div class="section-title">Bikes from Yamaha</div>
+   <!-- /* Product Detail Modal*/ -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+    <p id="modalDetails" class="bike-details"></p>
+     <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+<section class="yamaha">
+  <div class="product-card" onclick="showModal(10)">
+    <img src="./assets/Yamaha/bike1.png" alt="Bike 1">
+    <p>YAMAHA MT-15</p>
+  </div>
+  <div class="product-card" onclick="showModal(11)">
+    <img src="./assets/Yamaha/bike2.png" alt="Bike 2">
+    <p>YAMAHA R15 V4</p>
+  </div>
+  <div class="product-card" onclick="showModal(12)">
+    <img src="./assets/Yamaha/bike3.png" alt="Bike 3">
+    <p>YAMAHA FZS V3</p>
+  </div>
+  <div class="product-card" onclick="showModal(13)">
+    <img src="./assets/Yamaha/bike4.png" alt="Bike 4">
+    <p>YAMAHA WR 155R</p>
+  </div>
+  <div class="product-card" onclick="showModal(14)">
+    <img src="./assets/Yamaha/bike5.png" alt="Bike 5">
+    <p>YAMAHA FZX</p>
+  </div>
+  </section> 
+
+  <!-- KTM Models Section-->
+  <div class="section-title">Bikes from KTM</div>
+   <!-- /* Product Detail Modal*/ -->
+    <div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+    <p id="modalDetails" class="bike-details"></p>
+     <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<section class="ktm">
+  <div class="product-card" onclick="showModal(15)">
+    <img src="./assets/KTM/bike1.png" alt="Bike 1">
+    <p>KTM RC 200</p>
+  </div>
+  <div class="product-card" onclick="showModal(16)">
+    <img src="./assets/KTM/bike2.png" alt="Bike 2">
+    <p>KTM DUKE 390</p>
+  </div>
+  <div class="product-card" onclick="showModal(17)">
+    <img src="./assets/KTM/bike3.png" alt="Bike 3">
+    <p>KTM 390 ADVENTURE</p>
+  </div>
+  </section>
+
+  <!-- Bajaj Models Section -->
+  <div class="section-title">Bikes from Bajaj</div>
+   <!-- /* Product Detail Modal*/ -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+    <p id="modalDetails" class="bike-details"></p>
+     <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+<section class="bajaj">
+  <div class="product-card" onclick="showModal(18)">
+    <img src="./assets/Bajaj/bike1.png" alt="Bike 1">
+    <p>BAJAJ PULSAR NS 400V</p>
+  </div>
+  <div class="product-card" onclick="showModal(19)">
+    <img src="./assets/Bajaj/bike2.png" alt="Bike 2">
+    <p>BAJAJ PULSAR NS 200</p>
+  </div>
+  <div class="product-card" onclick="showModal(20)">
+    <img src="./assets/Bajaj/bike3.png" alt="Bike 3">
+    <p>BAJAJ PULSAR N 250</p>
+  </div>
+  <div class="product-card" onclick="showModal(21)">
+    <img src="./assets/Bajaj/bike4.png" alt="Bike 4">
+    <p>BAJAJ PULSAR 150</p>
+  </div>
+  <div class="product-card" onclick="showModal(22)">
+    <img src="./assets/Bajaj/bike5.png" alt="Bike 5">
+    <p>BAJAJ PULSAR 220F</p>
+  </div>
+  <div class="product-card" onclick="showModal(23)">
+    <img src="./assets/Bajaj/bike6.png" alt="Bike 5">
+    <p>BAJAJ DOMINAR 400V</p>
+  </div>
+  </section> 
+  
+  <!-- Bajaj Models Section -->
+  <div class="section-title">Bikes from Royal Enfield</div>
+   <!-- /* Product Detail Modal*/ -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+    <p id="modalDetails" class="bike-details"></p>
+     <button onclick="closeModal()">Close</button>
+  </div>
+  </div>
+  <section class="royalenfield">
+  <div class="product-card" onclick="showModal(24)">
+    <img src="./assets/rf/bike1.png" alt="Royal Enfield Classic 350">
+    <p>Classic 350</p>
+  </div>
+  <div class="product-card" onclick="showModal(25)">
+    <img src="./assets/rf/bike2.png" alt="Royal Enfield Hunter 350">
+    <p>Hunter 350</p>
+  </div>
+  <div class="product-card" onclick="showModal(26)">
+    <img src="./assets/rf/bike3.png" alt="Royal Enfield Meteor 350">
+    <p>Meteor 350</p>
+  </div>
+  <div class="product-card" onclick="showModal(27)">
+    <img src="./assets/rf/bike4.png" alt="Royal Enfield Interceptor 650">
+    <p>Interceptor 650</p>
+  </div>
+  <div class="product-card" onclick="showModal(28)">
+    <img src="./assets/rf/bike5.png" alt="Royal Enfield Himalayan 450">
+    <p>Himalayan 450</p>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>MotoSpeca</h2>
+      <p>Know Before You Go.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About US</a></li>
+        <li><a href="affilates.html">Our Affiliates</a></li>
+        <li><a href="about_us.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: info@motospeca.com</p>
+      <p>Phone: +977-9876543210</p>
+    </div>
+
+    <div class="footer-socials">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i>MotoSpeca_off</a>
+        <a href="https://www.instagram.com/" target="_blank"></a><i class="fab fa-instagram"></i>MotoSpeca_off</a>
+        <a href="https://x.com/MotoSpeca_off" target="_blank"></a><i class="fab fa-x-twitter"></i> MotoSpeca_off</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MotoSpeca. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

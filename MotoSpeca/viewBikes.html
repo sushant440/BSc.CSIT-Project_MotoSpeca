@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoSpeca</title>
+    <link rel="icon" type="image/x-icon" href="/assets/final vector favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+        <a class="logo">
+      <img src="assets/final vector favicon.png" alt="Logo">MOTOSPECA
+    </a>
+    
+    </div>
+        <!-- <div class="logo" >MotoSpec</div> -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="eshop.html">E-Shop</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page Content -->
+
+     <header class="header">
+        <h1>MOTOSPECA</h1>
+        <p>Know Before You Go</p>
+    </header> 
+
+<!-- View More Section -->
+  <div class="section-title">LATEST MODELS AND NEW ARRIVALS
+
+   <!-- /* Product Detail Modal*/ -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle">Bike Name</h2>
+    <img id="modalImage" src="" alt="Bike Image" />
+    <ul id="modalSpecs">
+      <!-- Specs will be inserted dynamically -->
+    </ul>
+     <p id="modalDetails" class="bike-details"></p>
+     <button onclick="closeModal()">Close</button>
+  </div>
+</div>
+
+<section class="product-grid">
+  <div class="product-card" onclick="showModal(0)">
+    <img src="./assets/Arrivals/bike1.png" alt="Bike 1">
+    <p>BAJAJ PULSAR N125</p>
+  </div>
+
+  <div class="product-card" onclick="showModal(1)">
+    <img src="./assets/Arrivals/bike2.png" alt="Bike 2">
+    <p>TRIUMPH 400</p>
+  </div>
+
+  
+</section>
+ <script src="viewBikes_script.js"></script> 
+</body>
+</html>

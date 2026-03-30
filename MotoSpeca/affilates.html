@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+     <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+        <a  class="logo">
+      <img src="assets/final vector favicon.png" alt="Logo"> MOTOSPECA
+    </a>
+    </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="affilates.html">Our Affiliates</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <section id="affiliates">
+  <div class="section-title">
+    <h2>Our Affiliate Shops</h2>
+  </div>
+  <div class="affiliates-body">
+    <p>
+      We work with trusted partner shops across Nepal to bring you the best 
+      motorcycle gear, parts, and accessories. Choose your favorite store 
+      and start shopping today.
+    </p>
+
+    <div class="affiliate-shops">
+
+      <!-- Shop Card 1 -->
+      <div class="shop-card">
+        <div class="shop-logo">
+          <img src="./assets/Shop/RS Motors.jpg" alt="RS Motors Logo">
+        </div>
+        <div class="shop-info">
+          <h3>RS Motors</h3>
+          <p>Genuine KTM & Bajaj accessories, helmets, and premium biking gear.
+            <p>📍Location: Kalanki,Kathmandu</p>
+          </p>
+          <a href="eshop.html" class="shop-btn">Visit Shop</a>
+        </div>
+      </div>
+
+      <!-- Shop Card 2 -->
+      <div class="shop-card">
+        <div class="shop-logo">
+          <img src="./assets/Shop/Bike Gear.jpg" alt="Bike Gear Shop Logo">
+        </div>
+        <div class="shop-info">
+          <h3>Bike Gear Nepal</h3>
+          <p>Wide range of riding jackets, gloves, and spare parts at best prices.
+            <p>📍Location: Naxal ,Kathmandu</p>
+          </p>
+          <a href="eshop.html" class="shop-btn">Visit Shop</a>
+        </div>
+      </div>
+
+      <!-- Shop Card 3 -->
+      <div class="shop-card">
+        <div class="shop-logo">
+          <img src="./assets/Shop/Speed Zone.png" alt="SpeedZone Logo">
+        </div>
+        <div class="shop-info">
+          <h3>SpeedZone</h3>
+          <p>Performance parts, custom modifications, and racing accessories.
+            <p>📍Location: New-Baneshwor Kathmandu</p>
+          </p>
+          <a href="eshop.html" class="shop-btn">Visit Shop</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- CTA Section -->
+ <div class="affiliate-card affiliate-cta-card">
+    <h3>Wanna be our Affiliate?</h3>
+    <p>Submit your shop details and join our network.</p>
+    <a href="#affiliatePopup" class="visit-btn">Click Here</a>
+  </div>
+</section>
+
+<!-- Modal Form (outside section, at end of body) -->
+<div id="affiliatePopup" class="popup">
+  <div class="popup-content">
+    <a href="#" class="close">&times;</a>
+    <h2>Affiliate Enquiry Form</h2>
+    <form id="affiliateForm">
+      <label for="shopName">Shop Name</label>
+      <input type="text" id="shopName" name="shopName" placeholder="Enter shop name" required>
+
+      <label for="shopLocation">Location</label>
+      <input type="text" id="shopLocation" name="shopLocation" placeholder="Enter location" required>
+
+      <label for="shopDescription">Shop Description</label>
+      <textarea id="shopDescription" name="shopDescription" rows="4" placeholder="Enter shop description" required></textarea>
+
+      <label for="contactNumber">Owner Contact Number</label>
+      <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter contact number" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+    </section>
+
+
+    
+<!-- Footer Section -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>MotoSpeca</h2>
+      <p>Know Before You Go.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About US</a></li>
+        <li><a href="affilates.html">Our Affiliates</a></li>
+        <li><a href="about_us.html#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: info@motospeca.com</p>
+      <p>Phone: +977-9876543210</p>
+    </div>
+
+    <div class="footer-socials">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i>MotoSpeca_off</a>
+        <a href="https://www.instagram.com/" target="_blank"></a><i class="fab fa-instagram"></i>MotoSpeca_off</a>
+        <a href="https://x.com/MotoSpeca_off" target="_blank"></a><i class="fab fa-x-twitter"></i> MotoSpeca_off</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MotoSpeca. All rights reserved.</p>
+  </div>
+</footer>
+    
+</body>
+</html>
